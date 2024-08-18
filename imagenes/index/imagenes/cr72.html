@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR7 Página</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #fff;
+        }
+        .header {
+            background-color: #111;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #272626;
+        }
+        .menu a {
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+          
+        }
+        .menu a:hover {
+            background-color: #555;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+            display: none; /* Ocultamos todas las secciones por defecto */
+        }
+        .active-content {
+            display: block; /* Mostramos la sección activa */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            border-image: 4px solid rgb(155, 31, 31);
+        }
+        .gallery img {
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+            margin: 5px;
+            transition: transform 0.3s;
+           
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #111;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        .mySlides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .active-slide {
+            display: block;
+        }
+        .titles-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .titles-container h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .titles-container h3 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        .titles-container p {
+            font-size: 16px;
+        }
+        .image-caption {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        CR7
+    </div>
+
+    <div class="menu">
+        <a onclick="showContent('career')">Carrera y Logros</a>
+        <a onclick="showContent('images')">Imágenes de Cristiano Ronaldo</a>
+        <a onclick="showContent('uniforms')">Uniformes</a>
+    </div>
+
+    <div id="career" class="content active-content">
+        <h2>Carrera y Logros</h2>
+        <p>Cristiano Ronaldo es uno de los jugadores más exitosos en la historia del fútbol. A lo largo de su carrera, ha logrado numerosos hitos que lo han consolidado como una leyenda del deporte:</p>
+        <ul>
+            <li><strong>Debut Profesional:</strong> Ronaldo comenzó su carrera en el Sporting de Lisboa antes de ser fichado por el Manchester United en 2003.</li>
+            <li><strong>Balones de Oro:</strong> Ha ganado 5 Balones de Oro, otorgados al mejor jugador del mundo.</li>
+            <li><strong>Títulos de Liga:</strong> Ha ganado títulos de liga en Inglaterra, España e Italia.</li>
+            <li><strong>Liga de Campeones:</strong> Ronaldo ha ganado la UEFA Champions League en múltiples ocasiones con el Manchester United y el Real Madrid.</li>
+            <li><strong>Récord de Goles:</strong> Es el máximo goleador de la historia de la UEFA Champions League.</li>
+            <li><strong>Máximo Goleador en la Eurocopa:</strong> Es el máximo goleador de la historia de la Eurocopa.</li>
+            <li><strong>Máximo Goleador de Clubes:</strong> Ha establecido récords de goles con el Manchester United, el Real Madrid y la Juventus.</li>
+            <li><strong>Capitán de Portugal:</strong> Ha llevado a la selección de Portugal a la victoria en la Eurocopa 2016 y la Liga de Naciones de la UEFA 2019.</li>
+            <li><strong>Premios Individuales:</strong> Ha sido galardonado con numerosos premios individuales, incluyendo el Premio al Jugador del Año de la FIFA.</li>
+            <li><strong>Trabajo Caritativo:</strong> Ronaldo es conocido por su trabajo en la caridad, incluyendo donaciones significativas a hospitales y organizaciones benéficas.</li>
+        </ul>
+        <p>Además de sus logros en el campo, Ronaldo es conocido por su trabajo caritativo, su dedicación al entrenamiento, y su longevidad en el deporte a un nivel extremadamente alto.</p>
+
+        <div class="slideshow-container">
+            <div class="mySlides active-slide">
+                <img src="c:\Users\Galdamez\Pictures\imagenes\debut 1.jpg" alt="Highlight 1">
+            </div>
+            <div class="mySlides">
+                <img src="c:\Users\Galdamez\Pictures\imagenes\debut 2.jpg" alt="Highlight 2">
+            </div>
+            <div class="mySlides">
+                <img src="c:\Users\Galdamez\Pictures\imagenes\debut 3.jpg" alt="Highlight 3">
+            </div>
+            <div class="mySlides">
+                <img src="c:\Users\Galdamez\Pictures\imagenes\debut 4.jpg" alt="Highlight 4">
+            </div>
+            <div class="mySlides">
+                <img src="c:\Users\Galdamez\Pictures\imagenes\debut 5.jpg" alt="Highlight 5">
+            </div>
+            <div class="mySlides">
+                <img src="c:\Users\Galdamez\Pictures\imagenes\debut 7.jpg" alt="Highlight 6">
+            </div>
+        </div>
+
+        <div class="titles-container">
+            <h2>Títulos y Logros</h2>
+            <div class="gallery">
+                <img src="c:\Users\Galdamez\Pictures\imagenes\balon de oro.jpg" alt="Título 1">
+                <div class="image-caption">Balón de Oro</div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\bota de oro.jpg" alt="Título 2">
+                <div class="image-caption">Bota de Oro</div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\fifa  best.jpg" alt="Título 3">
+                <div class="image-caption">FIFA Best</div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\pecho.jpg" alt="Título 4">
+                <div class="image-caption">Premio Pecho</div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\puskas.jpg" alt="Título 5">
+                <div class="image-caption">Premio Puskas</div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\campion.jpg" alt="Título 6">
+                <div class="image-caption">Campeón</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="images" class="content">
+        <h2>Imágenes de Cristiano Ronaldo</h2>
+        <p>Aquí puedes ver algunas imágenes destacadas de Cristiano Ronaldo.</p>
+        <div class="gallery">
+            <img src="c:\Users\Galdamez\Pictures\imagenes\cr7.jpg" alt="Imagen 1">
+            <img src="c:\Users\Galdamez\Pictures\imagenes\cr1.jpg" alt="Imagen 2">
+            <img src="c:\Users\Galdamez\Pictures\imagenes\cr3.jpg" alt="Imagen 3">
+            <img src="c:\Users\Galdamez\Pictures\imagenes\cr5.jpg" alt="Imagen 4">
+            <img src="c:\Users\Galdamez\Pictures\imagenes\ronaldo.jpg" alt="Imagen 5">
+        </div>
+    </div>
+
+    <div id="uniforms" class="content">
+        <h2>Uniformes</h2>
+        <p>Aquí puedes incluir información sobre los uniformes que Cristiano Ronaldo ha usado a lo largo de su carrera.</p>
+        <div class="gallery">
+            <div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\uniforme 1.jpg" alt="Uniforme 1">
+                <div class="image-caption">local Jersey 2017-18</div>
+            </div>
+            <div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\uniforme 2.jpg" alt="Uniforme 2">
+                <div class="image-caption"> Local Jersey Portugal 2018</div>
+            </div>
+            <div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\uniforme 3.jpg" alt="Uniforme 3">
+                <div class="image-caption">visitor of Real Madrid 2018</div>
+            </div>
+            <div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\uniforme 4.jpg" alt="Uniforme 4">
+                <div class="image-caption">Local Jersy Al-Nassr FC</div>
+            </div>
+            <div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\uniforme 5.jpg" alt="Uniforme 5">
+                <div class="image-caption">Juventus Jersey</div>
+            </div>
+            <div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\uniforme 6.jpg" alt="Uniforme 6">
+                <div class="image-caption">Manchester United</div>
+            </div>
+            <div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\uniforme 7.jpg" alt="Uniforme 7">
+                <div class="image-caption">Visitor Juventus Jersey</div>
+            </div>
+            <div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\uniforme 8.jpg" alt="Uniforme 8">
+                <div class="image-caption">Local Jersey With sleeves</div>
+            </div>
+            <div>
+                <img src="c:\Users\Galdamez\Pictures\imagenes\uniforme 9.jpg" alt="Uniforme 9">
+                <div class="image-caption">Home Juventus</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 CR7. Todos los derechos reservados.
+    </div>
+
+    <script>
+        function showContent(section) {
+            let contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active-content'));
+            
+            document.getElementById(section).classList.add('active-content');
+        }
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll('.mySlides');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active-slide');
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].classList.add('active-slide');
+            setTimeout(showSlides, 3000); // Cambia imagen cada 3 segundos
+        }
+    </script>
+
+</body>
+</html>
